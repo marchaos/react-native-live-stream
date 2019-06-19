@@ -60,6 +60,11 @@ public class RCTLivePlayerView extends NodePlayerView implements LifecycleEventL
         mChangedProps.add("bufferTime");
         mNodePlayer.setBufferTime(bufferTime);
     }
+    
+    public void setRtspTransport(String transport) {
+        mChangedProps.add("transport");
+        mNodePlayer.setRtspTransport(transport);
+    }
 
     public void setMaxBufferTime(int maxBufferTime) {
         mChangedProps.add("maxBufferTime");
